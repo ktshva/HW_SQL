@@ -1,16 +1,12 @@
 package ru.netology.data;
 
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 import lombok.SneakyThrows;
-import lombok.val;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
-import org.junit.jupiter.api.BeforeEach;
 import org.apache.commons.dbutils.QueryRunner;
 
 public class DbDataHelper {
-    @BeforeEach
     @SneakyThrows
     public static String getCode() {
         var runner = new QueryRunner();
